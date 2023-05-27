@@ -105,6 +105,7 @@ input {
 .projects {
     display: grid;
     grid-template-areas: "a b";
+    gap: 20px;
 }
 
 button {
@@ -127,4 +128,40 @@ button {
 
 .text {
     margin-right: auto;
+}
+
+.projects > div {
+    background-color: white;
+    height: 125px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px -10px black;
+    z-index: 0;
+}
+
+.projects > div > * {
+    margin: 5px;
+}
+
+.group-header {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px;
+}
+
+.announcements, .trending {
+    background-color: white;
+    display: grid;
+    width: 50%;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px -10px black;
+    z-index: 0;
+    margin: 20px;
+    padding: 10px;
+}
+
+.announcements > * {
+    margin: 20px;
 }
